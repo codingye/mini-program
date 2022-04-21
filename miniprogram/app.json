@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/bookCity/bookCity",
+    "pages/detail/detail",
+    "pages/bookSection/bookSection",
+    "pages/list/list",
+    "pages/mine/mine",
+    "pages/swiper/swiper"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#62e7e7",
+    "navigationBarTitleText": "我的小说世界",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#62e7e7",
+    "list": [
+      {
+        "pagePath": "pages/bookCity/bookCity",
+        "text": "书城",
+        "iconPath": "./images/bookcity.png",
+        "selectedIconPath": "./images/selectcity.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "书架",
+        "iconPath": "./images/listicon.png",
+        "selectedIconPath": "./images/listSelect.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./images/my.png",
+        "selectedIconPath": "./images/mySelect.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

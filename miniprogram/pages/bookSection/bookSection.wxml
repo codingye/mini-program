@@ -1,0 +1,58 @@
+<view class="section">
+<view class="introduce">
+  <view class="detail-left">
+    <image src="{{bookDetailData.imgurl}}"></image>
+  </view>
+  <view class="detail-right">
+    <view class="name">{{bookDetailData.name}}</view>
+    <view>
+      <text>{{bookDetailData.author}}</text>
+    </view>
+    <view>
+      <text>{{bookDetailData.status}}</text>
+    </view>
+    <view>
+      <text>{{bookDetailData.update}}</text>
+    </view>
+  </view>
+</view>
+<view class="joinBook">
+   <van-button type="primary" block class="btn" bindtap="joinBook" data-url="">加入书架</van-button>
+   <van-button type="warning" block class="btn">开始阅读</van-button>
+</view>
+<view class="introduction">
+  <view class="introduction-top">内容简介</view>
+  <view class="introduction-bottom">{{bookDetailData.detail}}</view>
+</view>
+<view class="section-list">
+  <view class="section-top">最新章节阅读</view>
+  <view class="section-item"
+  wx:for="{{sectionListData}}"
+  wx:key="index"
+  bindtap="toDetail"
+  data-url="{{item.url}}" >{{item.section}}</view>
+  </view>
+<view class="section-list">
+  <view class="section-top">全部章节阅读</view>
+  <view class="section-item"
+  wx:for="{{pageSectionData}}"
+  wx:key="index"
+  bindtap="toDetail"
+  data-url="{{item.url}}" >{{item.sectionName}}</view>
+</view>
+<!-- 分页 -->
+<view class="listPage">
+  <view class="pre">
+    <van-button type="warning" bindtap="prePage" class="preBtn" disabled="{{btnDisabled}}" block>上一页</van-button>
+  </view>
+  <view class="section">
+    <picker mode="selector" bindchange="bindPickerChange"  range="{{pageArray}}">
+      <view class="picker">第 {{pageArray[currentPage]}} 页</view>
+    </picker> 
+  </view>
+  <view class="next">
+    <van-button type="warning" class="nextBtn" bindtap="nextPage" block>下一页</van-button>
+  </view>
+</view>
+</view>
+

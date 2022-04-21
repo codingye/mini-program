@@ -1,0 +1,37 @@
+<!--pages/bookCity/bookCity.wxml-->
+<!-- <text>pages/bookCity/bookCity.wxml</text> -->
+<view class="header">
+  <view class="hot">热榜推荐</view>
+  <view class="more">搜索更多>>></view>
+</view>
+<view class="hot-list" wx:for="{{hotData}}" wx:key="index" bindtap="toRead" data-url="{{item.url}}">
+  <view class="item-left">
+    <image src="{{item.imgUrl}}"></image>
+  </view>
+  <view class="item-right">
+    <view class="book-name">
+    {{item.name}}
+    </view>
+    <view class="book-author">
+    作者：{{item.author}}
+    </view>
+    <view class="book-detail">
+    简介：{{item.detail}}
+   </view>
+  </view>
+</view>
+<!-- 分类 -->
+<view class="classify" wx:for="{{classifyData}}" wx:key="idnex">
+  <view class="classifyname">{{item.h2}}</view>
+  <view class="classifyitem"
+    bindtap="toRead"
+    data-url="{{list.url}}"
+    wx:for="{{item.data}}"
+    wx:for-item="list"
+    wx:key="index" >
+    <view class="type">{{list.type}}</view>
+    <view class="sname">{{list.name}}</view>
+    <view class="sauthor">{{list.author}}</view>
+  </view>
+</view>
+

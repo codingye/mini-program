@@ -1,0 +1,33 @@
+<view class="book-detail">
+  <view class="detail-change">
+    <view class="font-change">
+        <view class="font">字体:</view>
+       <view class="font-small" bindtap="fontChange" data-size="small">小</view> 
+       <view class="font-mid"   bindtap="fontChange" data-size="mid">中</view> 
+       <view class="font-large" bindtap="fontChange" data-size="large">大</view>
+    </view>
+    <view class="bgc-change">
+      <view class="bgc-green"  style="background-color:{{bgColor1}};" bindtap="bgcGreen" data-color="green">护眼</view>
+      <view class="bgc-dark"  style="background-color:{{bgColor2}};" bindtap="bgcDark" data-size="dark">{{darkFont}}</view>
+    </view>
+  </view>
+  <view class="page-change">
+    <view class="page-pre" bindtap="">上一页</view>
+    <view class="page-section" bindtap="">返回章节列表</view>
+    <view class="page-next" bindtap="">下一页</view>
+  </view>
+  <view class="section-content" style="font-size: {{contentSize}};background-color: {{contentBgColor}};color: {{contentColor}};">
+  <rich-text nodes="{{bookHtml}}" class="">
+  </rich-text>
+  </view>
+  <view class="page-change">
+    <view class="page-pre">上一页</view>
+    <view class="page-section">返回章节列表</view>
+    <view class="page-next">下一页</view>
+  </view>
+  <view class="page-bottom">
+    <view class="page-index" bindtap="toOtherPage" data-page="index">首页</view>
+    <view class="page-list">我的书架</view>
+    <view class="page-toTop" bindtap="toTop">顶部</view>
+  </view>
+</view>

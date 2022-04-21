@@ -1,0 +1,95 @@
+/* pages/bookSetion/bookSection.wxss */
+.introduce{
+  display: flex;
+  margin: 12rpx;
+  background:#ffff;
+  border-radius: 8rpx;
+  height: 300rpx;
+}
+.detail-left image{
+  width: 200rpx;
+  height: 260rpx;
+  margin: 14rpx;
+  border-radius: 8rpx;
+}
+.detail-right{
+  flex: 1;
+  margin: 14rpx;
+}
+.detail-right view{
+  padding: 10rpx 0;
+}
+.detail-right text{
+  font-weight: 300;
+  color: #222;
+}
+.name{
+  font-size: 36rpx;
+}
+.joinBook{
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  /* display: block; */
+  width: 300rpx;
+  margin:20rpx 26rpx;
+  margin-top: 0;
+  border-radius: 8rpx;
+}
+.introduction-top,.section-top{
+  line-height: 100rpx;
+  background:#62e7e7;
+  color: #ffff;
+  padding-left: 20rpx;
+  border-bottom: 1px solid #bfbfbf;
+}
+.introduction-bottom{
+  margin: 20rpx;
+  line-height: 150%;
+  color: #888;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.section-item{
+  padding: 0 20rpx;
+  line-height: 80rpx; 
+  font-size: 32rpx;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #bfbfbf;
+}
+/* .btn2{
+  display: block;
+  margin: 20rpx;
+} */
+.listPage{
+  display: flex;
+  text-align: center;
+  margin: 20rpx;
+  align-items: center;
+}
+.listPage .pre{
+  flex: 3;
+}
+.listPage .section{
+  flex: 4;
+  height: 68rpx;
+  line-height: 68rpx;
+}
+.listPage .next{
+  flex: 3;
+}
+.picker{
+  height: 100%;
+  font-style: 28rpx;
+  color: #888;
+}
+.preBtn,.nextBtn{
+  width: 220rpx;
+}

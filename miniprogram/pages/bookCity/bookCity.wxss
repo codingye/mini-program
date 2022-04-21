@@ -1,0 +1,89 @@
+/* pages/bookCity/bookCity.wxss */
+/* pages/mine/mine.wxss */
+.header{
+  display: flex;
+  margin-top: 40rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.hot{
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #68cca2;
+  width: 200rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 12rpx;
+}
+.more{
+  font-size: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 12rpx;
+  font-weight: bold;
+  letter-spacing: 4rpx;
+  color: #68cca2;
+}
+.hot-list{
+  display: flex;
+  margin: 12rpx;
+  background: #FEF9EF;
+  border-radius: 8rpx;
+  height: 360rpx;
+}
+.item-left image{
+  width: 260rpx;
+  height: 330rpx;
+  margin: 14rpx;
+  border-radius: 8rpx;
+}
+.item-right{
+  flex: 1;
+  margin: 14rpx;
+}
+.book-name {
+  font-size: 40rpx;
+  letter-spacing: 8rpx;
+}
+.item-right .book-author{
+  padding: 30rpx 0;
+  color: #bfbfbf;
+}
+.book-detail{
+  color: #bfbfbf;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.classify{
+  padding: 12rpx;
+  font-size: 32rpx;
+  color: #888;
+}
+.classifyname{
+  height: 80rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  background: #f6f6f6;
+  border-top: 1px solid #d7d7d7;
+  color: #222;
+  padding-left: 20rpx;
+}
+.classifyitem{
+  background: #ffffff;
+  font-size: 28rpx;
+  border-bottom: 1px solid #ddd;
+  height: 72rpx;
+  display: flex;
+  /* justify-content: space-between; */
+  /* line-height: 72rpx; */
+  align-items: center;
+  padding:  0 20rpx;
+}
+.sname{
+  color: #245561;
+  flex: 1;
+}
